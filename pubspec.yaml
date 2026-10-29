@@ -1,0 +1,24 @@
+﻿name: infracheck_admin
+description: Painel de gestão InfraCheck (Flutter web) — protótipo do MVP.
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Módulos compartilhados (tema, modelos, cliente da API). No workspace, o submódulo vizinho.
+  infracheck_modules:
+    path: ../InfraCheck_modules
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  http: ^1.2.2 # MockClient nos testes
+
+flutter:
+  uses-material-design: true

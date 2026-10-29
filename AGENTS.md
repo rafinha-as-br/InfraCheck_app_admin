@@ -26,3 +26,7 @@ A aplicação web deve dar suporte principalmente a:
 - Autenticação, autorização efetiva, regras de domínio, persistência e geração de PDF pertencem ao servidor, em `../InfraCheck_Server`. Não duplique essas regras no front-end.
 - Informações de localização, imagens, assinaturas e dados de clientes exigem tratamento compatível com a LGPD.
 - O repositório está em estado inicial. Não suponha framework, arquitetura ou contratos de API que ainda não tenham sido definidos e documentados.
+
+## Estado atual (protótipo do MVP)
+
+Painel em **Flutter web** (definição confirmada na documentação oficial do Confluence), telas W01–W04 do design em `lib/presentation/`, consumindo `../InfraCheck_modules` (tema, modelos e `InfraCheckApi`) e o `InfraCheck_Server`. Estado por `ChangeNotifier` + `AsyncState`; rotas por URL em `app.dart`. Ver `docs/overview.md`. Não duplique regra do servidor aqui: o painel só antecipa bloqueios na tela.
